@@ -1,11 +1,18 @@
 import React from 'react';
-
-import { toast } from 'react-toastify';
 import { Container } from '../../style/GlobalStyles';
 import { Title, Paragrafo } from './styled';
+import axios from '../../services/axios';
 
 export default function Login() {
-  toast.success('oie');
+  React.useEffect(() => {
+    async function getData() {
+      const response = await axios.get('/alunos');
+      console.log(response);
+    }
+
+    getData();
+  }, []);
+
   return (
     <Container>
       <Title>

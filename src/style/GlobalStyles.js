@@ -53,8 +53,12 @@ export default createGlobalStyle`
 
 export const Container = styled.section`
   max-width: 360px;
+  min-height: 300px;
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
