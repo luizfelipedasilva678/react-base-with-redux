@@ -1,2 +1,3 @@
 # react_base_with_redux
-consuming a Rest API with React.
+
+This is a basis for making React applications using Redux, Redux Saga and Redux Persist.
