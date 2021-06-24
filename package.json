@@ -1,5 +1,5 @@
 {
-  "name": "react-boilerplate-code",
+  "name": "react_base_with_redux",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
