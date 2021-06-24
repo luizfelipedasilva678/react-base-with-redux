@@ -52,7 +52,7 @@ export default createGlobalStyle`
 `;
 
 export const Container = styled.section`
-  max-width: 360px;
+  max-width: 640px;
   min-height: 300px;
   background: #fff;
   border-radius: 4px;
@@ -60,5 +60,6 @@ export const Container = styled.section`
   margin: 30px auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
 `;

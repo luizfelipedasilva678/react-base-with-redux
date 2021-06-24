@@ -15,10 +15,7 @@ export default function Login() {
 
   return (
     <Container>
-      <Title>
-        Login
-        <small>Oie</small>
-      </Title>
+      <Title>Lorem Ipsum</Title>
       <Paragrafo>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
         laborum reiciendis impedit minima sunt quam blanditiis eveniet tempora,
