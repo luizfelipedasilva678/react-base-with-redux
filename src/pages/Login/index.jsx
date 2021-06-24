@@ -1,17 +1,17 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { Container } from '../../style/GlobalStyles';
 import { Title, Paragrafo } from './styled';
-import axios from '../../services/axios';
+import * as exampleActions from '../../store/modules/example/actions';
 
 export default function Login() {
-  React.useEffect(() => {
-    async function getData() {
-      const response = await axios.get('/alunos');
-      console.log(response);
-    }
+  const dispatch = useDispatch();
 
-    getData();
-  }, []);
+  function handleClick(e) {
+    e.preventDefault();
+
+    dispatch(exampleActions.clicaBotao());
+  }
 
   return (
     <Container>
@@ -25,7 +25,9 @@ export default function Login() {
         rem quisquam, perferendis magni non magnam distinctio! Iste quisquam at
         iure. Tempore.
       </Paragrafo>
-      <button type="button">Enviar</button>
+      <button type="button" onClick={handleClick}>
+        Enviar
+      </button>
     </Container>
   );
 }
